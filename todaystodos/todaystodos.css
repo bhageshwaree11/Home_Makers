@@ -1,0 +1,91 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-image: url(images/‎image1.jpeg);
+    /* background-size: contain; */
+    /* background-repeat: repeat-x; */
+
+}
+.tagline
+{
+    position:absolute;
+    top: 90px;
+    color: rgb(60, 20, 20);
+    font-family: "Caveat", sans-serif;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+.headline
+{
+    position: absolute;
+    top: 120px;
+    color: rgb(60, 20, 20);
+    font-family: "Marko one", sans-serif;
+    font-size: 60px;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.form{
+    position: absolute;
+    top: 40%;
+    box-shadow: 0 4px 8px rgba(0,0,0,.3);
+    width: 400px;
+    background-color: rgb(60, 20, 20);
+    border-radius: 10px;
+    color:rgb(255, 240, 240)
+}
+
+.input{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    font-family: "Kalam", sans-serif;
+}
+
+.input::placeholder{
+    color: lightgray;
+}
+
+.list{
+    padding: 0;
+    margin: 0;
+}
+
+.list li{
+    list-style-type: none;
+    padding: 20px;
+    font-family: "Kalam", sans-serif;
+    border-top: dotted;
+    border-color: rgb(255, 240, 240);
+    position: relative;
+}
+
+.list li .fa-trash{
+    color: red;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.list li .fa-check-square{
+    color: green;
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.list li.checked {
+    color: darkgray;
+    text-decoration: line-through;
+}
+
+.list li.checked .fa-check-square{
+    color: darkgray;
+}

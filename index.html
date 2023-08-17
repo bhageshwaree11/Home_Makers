@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>
+    Home Makers
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!--fa fa bars-->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" /><!--login buttons icons-->
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Caveat&family=Cherry+Bomb+One&family=Coming+Soon&family=Dancing+Script&family=Edu+SA+Beginner&family=Gruppo&family=Kalam:wght@300&family=Marko+One&family=Tangerine&display=swap" rel="stylesheet"><!--font=tangerine-->
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Bad+Script&family=Caveat&family=Cherry+Bomb+One&family=Coming+Soon&family=Dancing+Script&family=Edu+SA+Beginner&family=Gruppo&family=Kalam:wght@300&family=Marko+One&family=Tangerine&display=swap" rel="stylesheet"><!--bad script--> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"><!--social media icons-->
+
+ 
+</head>
+<body>
+<!-- nav bar starts -->
+<div id="topnav" class="navbar">
+  <a href="#" class="logo">
+   Home Makers
+   
+  </a>
+  <div class="navbar-right menu">
+    <a href="home.html" class="active">
+      Home
+    </a>
+    <a href="about/about.html">
+      About
+    </a>
+   
+    
+    <a href="events/events.html">Events</a>
+    <a href="mydiary/mydiary.html">My Diary</a>
+    <a href="todaystodos/todaystodos.html">Today's To-Dos</a>
+   
+    <!-- <div class="dropdown">
+      <a href="#">Explore <i class="fa fa-caret-down"></i></a>
+      <div class="dropdown-content">
+        <a href="#"><a href="explore_blogs.html">Blogs</a></a>
+        <a href="#"><a href="explore_budgettracker.html">Track My Budget</a></a>
+        <a href="#"><a href="explore_events.html">Events</a></a>
+        <a href="#"><a href="explore_todofortoday.html">Todays To-Dos</a></a>
+        <a href="#"><a href="explore_mydiary.html">My Diary</a></a>
+        <a href="#"><a href="explore_photogallery.html">Photo Gallery</a></a>
+      </div>
+    </div> -->
+    <button class="login_button" id="form-open">Login</button>
+
+  </div>
+  <div class="navbar-right">
+    <a href="javascript:void(0);" class="icon" onclick="showMenu()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+<!-- nav bar ends -->
+<!-- image slider starts -->
+<div id="slideshow-container" class="slideshow-container">
+  <div class="slide-item bgimg fade" style="background-image: url('images/image1.jpg');">
+    <div class="caption">
+      <a href="#our-vision-section">
+      <button>
+       Discover
+      </button>
+      </a>
+    </div>
+  </div>
+
+  <div class="slide-item bgimg fade" style="background-image: url('images/image8.jpg');">
+    <div class="caption">
+      <a href="#our-vision-section">
+        <button>
+         Discover
+        </button>
+        </a>
+    </div>
+  </div>
+
+  <div class="slide-item bgimg fade" style="background-image: url('images/image12.jpg');">
+    <div class="caption">
+      <a href="#our-vision-section">
+        <button>
+         Discover
+        </button>
+        </a>
+    </div>
+  </div>
+
+
+  <div class="slide-item bgimg fade" style="background-image: url('images/image3.jpg');">
+    <div class="caption">
+      <a href="#our-vision-section">
+        <button>
+         Discover
+        </button>
+        </a>
+    </div>
+  </div>
+
+  <div id="slide-control" class="slide-control">
+    <span class="dot" onclick="chooseSlide(0)"><p>We Plan</p></span>
+    <span class="dot" onclick="chooseSlide(1)"><p>We Cook</p></span>
+    <span class="dot" onclick="chooseSlide(2)"><p>We Clean</p></span>
+    <span class="dot" onclick="chooseSlide(3)"><p>We Manage</p></span>
+  </div>
+</div> 
+ <!-- image slider ends -->
+
+ <!-- Home -->
+ <section class="home">
+  <div class="form_container">
+    <i class="uil uil-times form_close"></i>
+
+    <!-- Login form starts -->
+    <div class="form login_form">
+      <form action="#">
+        <h2>Login</h2>
+
+        <div class="input_box">
+          <input type="email" placeholder="Enter your email" required />
+          <i class="uil uil-envelope-alt email"></i>
+        </div>
+        <div class="input_box">
+          <input type="password" placeholder="Enter your password" required />
+          <i class="uil uil-lock password"></i>
+          <i class="uil uil-eye-slash pw_hide"></i>
+        </div>
+
+        <div class="option_field">
+          <span class="checkbox">
+            <input type="checkbox" id="check" />
+            <label for="check">Remember me</label>
+          </span>
+          <a href="#" class="forgot_pw">Forgot password?</a>
+        </div>
+
+        <button class="login_button">Login Now</button>
+
+        <div class="login_signup">Don't have an account? <a href="#" id="signup">Signup</a></div>
+      </form>
+    </div>
+<!-- login form ends -->
+ <!-- Signup form starts -->
+ <div class="form signup_form">
+  <form action="#">
+    <h2>Signup</h2>
+
+    <div class="input_box">
+      <input type="email" placeholder="Enter your email" required />
+      <i class="uil uil-envelope-alt email"></i>
+    </div>
+    <div class="input_box">
+      <input type="password" placeholder="Create password" required />
+      <i class="uil uil-lock password"></i>
+      <i class="uil uil-eye-slash pw_hide"></i>
+    </div>
+    <div class="input_box">
+      <input type="password" placeholder="Confirm password" required />
+      <i class="uil uil-lock password"></i>
+      <i class="uil uil-eye-slash pw_hide"></i>
+    </div>
+
+    <button class="login_button">Signup Now</button>
+
+    <div class="login_signup">Already have an account? <a href="#" id="login">Login</a></div>
+  </form>
+</div>
+</div>
+</section>
+<!-- sign up form ends -->
+<!-- our vision starts -->
+<section class="ourVision" id="our-vision-section">
+  <h2>Our Vision</h2>
+  <img src="images/image13.svg" alt="workDone">
+  <p>
+    We live in a chaotic world, with dependencies and insecurities. Homemakers are unpaid workers who imprint a subtle yet powerful impact on the overall world. One person belongs to a family, one family belongs to a community, and one community belongs to a nation; ultimately, each nation is part of the whole world. Our aim is to achieve maximum positivity through organizing and updating lifestyles with time and place. Taking one step in the right direction brings us closer to a peaceful world. Someone might appear calm when unaffected, but stepping on their toes could make that person react for obvious reasons. Organization is the solution for such scenarios. Organization is the technique where everything is synchronized and runs in harmony without causing clutter. Homemaking is not a job driven by profit hunger; rather, it requires love and devotion in one's heart. Love is ultimately the greatest defense against the unthinkable. An organized home becomes a firm building block for a strong, secure, and independent nation
+  </p>
+</section>
+<!-- our vision ends -->
+<!-- Our Seevice starts -->
+<section class="service">
+  <h2>Our Services</h2>
+  <img src="images/image14.jpg" alt="service photo">
+  <p>We offer a platform for regulating day-to-day activities and tracking your own time. Every home is unique, yet there are certain rituals and tricks that can be helpful in maintaining smooth operations. A disciplined household ultimately contributes to a healthily conscious life. Time management stands as a key aspect of our program, based on the belief that life, in simplistic terms, is a combination of time and energy. Aspiring to achieve the most with minimal time and effort is our goal. This journey could shape one's approach towards life.
+  </p>
+</section>
+<!-- News and updtaes starts -->
+<section class="news">
+<h2>News and Updates</h2>
+<ul>
+  <li>We have headquarters to help our customers with assistance on toll free number 9999 9999 9999</li>
+  <li>You can easily reach us at what’s aap with your name and query at 9898989898</li>
+</ul>
+</section>
+<!-- News and updates ends -->
+<!-- stories starts -->
+<h2 class="storiesTitle">Inspired Stories</h2>
+<section class="stories">
+  
+<div class="storiesImage">
+  <img src="images/image15.jpg" alt="family photo" id="personImage">
+</div> 
+<h4 id="author">Janah Spector</h4>
+<p id="info">
+  I am a homemaker living alone in an urban city and working full-time in an MNC. I have a preference for homecooked food and managing everything by myself. However, my fanciful notion of handling all tasks independently resulted in turning my life and home into a chaotic drama. This chaos began to affect my performance at the office, serving as a warning sign that I needed to find a better way to balance my home and work responsibilities.
+Homemakers serve as a constant reminder of the day-to-day tasks that I tend to overlook. It's the small things that can lead to significant changes. Thanks to their guidance, I've become much more organized and balanced in managing both my home and work life. Even on weekends when I am often traveling or away, my home no longer descends into disorder. This achievement is due to the implementation of the practical tricks recommended by homemakers.
+</p> 
+<div class="storiesBtn">
+  <button class="storiesPrevBtn">
+    <i class="fas fa-chevron-left"></i>
+  </button>
+
+  <button class="storiesNextBtn">
+    <i class="fas fa-chevron-right"></i>
+  </button>
+</div>
+</section>
+
+<!-- footer -->
+<footer>
+<h2> Reach us at</h2> 
+<p>E-mail: homemakers@gmail.com</p>
+<p>Fax: 88938 93888</p>
+<p>Toll free: 1800 8000 9000</p>
+<h2>Follow us on</h2>
+<div class="social-icons">
+  <a href="#"><i class="fab fa-facebook"></i></a>
+  <a href="#"><i class="fab fa-twitter"></i></a>
+  <a href="#"><i class="fab fa-instagram"></i></a>
+</footer>
+<!-- footer ends -->
+<pre>© 2023 sonu. All rights reserved. </pre>
+<script src="index.js"></script>
+
+
+</body>
+</html>
